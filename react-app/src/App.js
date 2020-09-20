@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Checkbox from './Components/Checkbox';
-import Linechart from './Components/Linechart';
+//import Linechart from './Components/Linechart';
 import * as d3 from 'd3';
 
 class App extends React.Component {
@@ -9,14 +9,25 @@ class App extends React.Component {
 	state = [
 		{
 			race: "WHITE",
+			size: 0
 		},		
 		{
 			race: "BLACK",
+			size: 0
 		},
 		{
 			race: "HISPANIC",
+			size: 0
 		}
 	]	
+
+	/*
+	componentDidMount() {
+		fetch(`https://data.austintexas.gov/resource/7guv-wkre.json?race_origin_code=A&reason_for_stop=1`)
+			.then(response => response.json())
+			.then(data => console.log(data))
+	}
+	*/
 
 	render() {
 		const people = this.state;
@@ -32,7 +43,6 @@ class App extends React.Component {
 					</div>
 				</div>
 				<div className="container" id="mountain">
-					<Linechart></Linechart>
 				</div>
 			</div>
 		);
