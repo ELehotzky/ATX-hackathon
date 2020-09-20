@@ -11,9 +11,9 @@
   width: 100%;
   max-height: 100%;
   max-width: 100%;
-  background-image: url('./Images/Mountain-02.png');
+  background-image: url('./Images/Mountain-01.png');
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -22,9 +22,23 @@ h1 {
   text-align: center;
 }
 
+input[type="checkbox"] + label[for^=WHITE] {
+  color: #E71D36;
+}
+
+input[type="checkbox"] + label[for^=BLACK] {
+  color: #2EC4B6;
+}
+
+input[type="checkbox"] + label[for^=HISPANIC] {
+  color: #FF9F1C;
+}
+
 label {
   text-align: center;
-  padding: 15px
+  padding-left: 5px;
+  padding-right: 25px;
+  font-weight: bold;
 }
 
 .main {
@@ -50,7 +64,7 @@ select{
 
 .selection {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
