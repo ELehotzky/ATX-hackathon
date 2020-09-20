@@ -1,0 +1,70 @@
+.container:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 15px;
+}
+
+.container:nth-child(2) {
+  height: 80%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  background-image: url('./Images/Mountain-01.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #011627;
+  text-align: center;
+}
+
+input[type="checkbox"] + label[for^=WHITE] {
+  color: #E71D36;
+}
+
+input[type="checkbox"] + label[for^=BLACK] {
+  color: #2EC4B6;
+}
+
+input[type="checkbox"] + label[for^=HISPANIC] {
+  color: #FF9F1C;
+}
+
+label {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 25px;
+  font-weight: bold;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #9DEDFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+option {
+  text-align: center;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  width: 25%;
+}
+
+.selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
